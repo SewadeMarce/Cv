@@ -1306,7 +1306,7 @@ width: 69%;
   a {
     color: #000 !important;
     text-decoration: underline; /* Indiquer que c'est un lien */
-  }
+  }/*
    h2 {
   /*  page-break-before: always; /* Toujours commencer un nouveau titre h2 sur une nouvelle page */
   }
