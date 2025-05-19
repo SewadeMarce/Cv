@@ -810,7 +810,7 @@ full_css_content = """*/
 
 /* ====== DIMENSIONS ====== */
 .w-10 {
-    width: 2.5rem;
+    width: 10rem;
 }
 
 .w-20 {
@@ -1291,4 +1291,34 @@ width: 69%;
     div.fd-col {
         flex-direction: row;
     }
+}
+
+
+@media print {
+  /* Styles spécifiques pour l'impression ici */
+
+
+    body {
+    color: #000;
+    background-color: #fff;
+  }
+  /* Pour s'assurer que les liens sont visibles */
+  a {
+    color: #000 !important;
+    text-decoration: underline; /* Indiquer que c'est un lien */
+  }
+   h2 {
+  /*  page-break-before: always; /* Toujours commencer un nouveau titre h2 sur une nouvelle page */
+  }
+
+  table {
+    page-break-inside: avoid; /* Essayer d'éviter de couper un tableau en deux */
+  }
+
+  ul {
+    page-break-inside: avoid; /* Essayer d'éviter de couper une liste */
+  }
+.f{
+display: flex;
+}
 }
